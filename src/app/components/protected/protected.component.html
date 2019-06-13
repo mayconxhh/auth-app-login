@@ -1,0 +1,17 @@
+<h3>{{ profile?.given_name }}</h3>
+<hr>
+
+<div class="row">
+	<div class="col-md-4">
+		<img [src]="profile?.picture" class="img img-fluid img-thumbnail" alt="">
+	</div>
+
+	<div class="col-md-8">
+		<h3>{{ profile?.name }}<small> {{ profile?.updated_at | date:'dd-MM-yyyy' }} </small></h3>
+		<ul class="list-group">
+			<li class="list-group-item">
+				{{ profile?.locale }}
+			</li>
+		</ul>
+	</div>
+</div>
